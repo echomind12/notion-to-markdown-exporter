@@ -1,0 +1,12 @@
+[project]
+name = "notion-exporter"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "notion-client>=2.7.0",
+    "python-dotenv>=1.2.1",
+    "python-slugify>=8.0.4",
+    "requests>=2.32.5",
+]
